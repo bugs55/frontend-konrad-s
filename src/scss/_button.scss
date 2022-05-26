@@ -1,0 +1,11 @@
+@use "variables" as var;
+
+.primaryButton {
+  background-color: var.$primary;
+  padding: 16px 40px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 32px;
+  margin-top: 32px;
+}

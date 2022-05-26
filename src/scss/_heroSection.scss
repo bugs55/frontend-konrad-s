@@ -1,0 +1,43 @@
+.heroSection {
+  display: flex;
+
+  .heroSectionImage {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .heroSectionText {
+    width: 50%;
+    padding: 0 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+      align-self: flex-start;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .heroSectionText {
+    padding: 50px 50px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+
+    .heroSectionImage,
+    .heroSectionText {
+      width: 100%;
+    }
+
+    .heroSectionText {
+      h1 {
+        font-size: 2.25em;
+      }
+    }
+  }
+}
