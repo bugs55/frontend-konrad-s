@@ -20,7 +20,7 @@
     <main>
       <div class="container">
         <section class="heroSection">
-          <div class="heroSectionImage">
+          <div class="heroSectionImage" role="img">
             <img
               src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg"
               alt="sand and sea"
@@ -33,23 +33,30 @@
               and protection for modern and legacy infrastructures and SaaS
               platforms, managed via a single app with no hardware required.
             </p>
-            <button class="primaryButton" id="heroSectionButton">Button</button>
+            <button
+              aria-label="open popup"
+              class="primaryButton"
+              id="heroSectionButton"
+            >
+              Button
+            </button>
           </div>
         </section>
       </div>
-      <div class="popup" id="popup">
+      <div class="popup" id="popup" role="dialog">
         <div class="popupBox">
           <div class="popupIcon">
             <i class="gg-close"></i>
           </div>
           <h1>Alert!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            sed excepturi earum optio enim quos vel cum, modi amet quae, nobis
-            sequi ratione praesentium libero sint accusantium, labore
-            recusandae. Deleniti.
-          </p>
-          <button class="primaryButton" id="popupButton">Reset counter</button>
+          <p></p>
+          <button
+            class="primaryButton"
+            id="popupButton"
+            aria-label="reset counter"
+          >
+            Reset counter
+          </button>
         </div>
       </div>
     </main>
