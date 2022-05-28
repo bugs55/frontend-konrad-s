@@ -5,6 +5,8 @@ const popup = document.getElementById("popup");
 const popupButton = document.getElementById("popupButton");
 const popupIcon = document.querySelector(".popupIcon");
 
+if (clicks === null) clicks = 0;
+
 const togglePopup = () => {
   isPopupOpen = !isPopupOpen;
 
@@ -12,7 +14,7 @@ const togglePopup = () => {
 };
 
 const toggleButton = () => {
-  clicks >= 5
+  clicks > 5
     ? (popupButton.style.display = "flex")
     : (popupButton.style.display = "none");
 };
@@ -24,7 +26,6 @@ const updatePopupText = () => {
 };
 
 const handleButtonClick = () => {
-  if (clicks === null) clicks = 0;
   clicks++;
   sessionStorage.setItem("clicks", clicks);
   updatePopupText();

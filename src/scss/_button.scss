@@ -3,10 +3,15 @@
 .primaryButton {
   background-color: var.$primary;
   padding: 16px 40px;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   border-radius: 32px;
   margin-top: 32px;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 19px 37px -3px var.$primaryShadow;
+  }
 }
